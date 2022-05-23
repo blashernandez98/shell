@@ -2,5 +2,5 @@
 git add .
 echo 'Enter git commit comment'
 read comment
-git commit -m ''${comment}''
+git commit -m '${comment}'
 git push
