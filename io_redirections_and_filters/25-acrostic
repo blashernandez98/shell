@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -c 1 0-hello_world | tr -d '\n'
+cut -c 1 | tr -d '\n'
