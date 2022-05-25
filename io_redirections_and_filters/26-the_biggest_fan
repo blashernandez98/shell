@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 | uniq -c | sort | tail -n 11 | cut -c9- | rev
+cut -f1 | uniq -c | sort -n | uniq -u | tac | head -n 11
