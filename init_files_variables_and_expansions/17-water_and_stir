@@ -1,3 +1,2 @@
 #!/bin/bash
-echo "$WATER" | tr 'e' '3' | tr 'w' '0' | tr 'a' '1' | tr 't' '2' | tr 'r' '4'
-echo hola
+echo $bestchol#$((water#$WATER + stir.#STIR))
