@@ -1,2 +1,3 @@
 #!/bin/bash
-echo $(($WATER + $STIR))
+echo "$WATER" | tr 'e' '3' | tr 'w' '0' | tr 'a' '1' | tr 't' '2' | tr 'r' '4'
+echo hola
