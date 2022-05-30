@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# Bash script that gives information about the file "school"
+
+info=$(file school)
+if [[ $info = "school: cannot open \`school' (No such file or directory)" ]]
+then
+	echo "school file does not exist"
+else
+	echo "school file exists"
+	
+	if [[ $info = "school: empty" ]]
+	then
+		echo "school file is empty"
+	else
+		echo "school file is not empty"
+	fi
+
+	if [[ -f ./school ]]
+	then
+		echo "school is a regular file"
+	fi
+fi
