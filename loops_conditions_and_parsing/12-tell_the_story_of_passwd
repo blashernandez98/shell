@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script parses and prints the contents of the file /etc/passwd
+
+while IFS="" read -r lectura
+do
+	name=$(echo "$lectura" | cut -d: -f1)
+	group=$(echo "$lectura" | cut -d: -f4)
+	direc=$(echo "$lectura" | cut -d: -f6)
+	comm=$(echo "$lectura" | cut -d: -f7)
+	id=$(echo "$lectura" | cut -d: -f3)
+	pass=$(echo "$lectura" | cut -d: -f2)
+	info=$(echo "$lectura" | cut -d: -f5)
+
+	output="The user $name is part of the $group gang, lives in $direc and rides $comm. $id´s place is protected by the passcode $pass, more info about the user here: $info"
+	echo "$output"
+done < /etc/passwd
