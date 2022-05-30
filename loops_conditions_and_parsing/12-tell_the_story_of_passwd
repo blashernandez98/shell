@@ -11,6 +11,6 @@ do
 	pass=$(echo "$lectura" | cut -d: -f2)
 	info=$(echo "$lectura" | cut -d: -f5)
 
-	output="The user $name is part of the $group gang, lives in $direc and rides $comm. $id´s place is protected by the passcode $pass, more info about the user here: $info"
+	output="The user $name is part of the $group gang, lives in $direc and rides $comm. ${id}´s place is protected by the passcode $pass, more info about the user here: $info"
 	echo "$output"
 done < /etc/passwd
