@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 # This script prints processes with "Bash" in its name along with its PID
-pgrep -lf "bash"
+pgrep -s 0 -vl "" | grep "bash"
