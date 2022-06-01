@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script kills the process initiated by script #4
 
-kill -15 $(pgrep -f "4-to_infinity_and_beyond")
+kill -15 "$(pgrep -f "4-to_infinity_and_beyond")"
